@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">Program Matematika Diskrit</div>
+            <ul>
+                <li><a href="#counting">Counting</a></li>
+                <li><a href="#pigeonhole">Pigeonhole</a></li>
+                <li><a href="#permutasi">Permutasi</a></li>
+                <li><a href="#kombinasi">Kombinasi</a></li>
+                <li><a href="#binomial">Binomial</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="counting" class="section">
+        <h2>Counting</h2>
+        <div id="counting-inputs">
+            <input type="number" placeholder="Enter a number">
+        </div>
+        <button onclick="addInput()">Add Another Number</button>
+        <select id="counting-operation">
+            <option value="multiply">Multiply</option>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="divide">Divide</option>
+        </select>
+        <button onclick="count()">Calculate</button>
+        <p id="counting-result"></p>
+    </div>
+
+    <div id="pigeonhole" class="section">
+        <h2>Pigeonhole</h2>
+        <input type="number" id="pigeonhole-n" placeholder="Enter n">
+        <input type="number" id="pigeonhole-m" placeholder="Enter m">
+        <button onclick="pigeonhole()">Calculate</button>
+        <p id="pigeonhole-result"></p>
+    </div>
+
+    <div id="permutasi" class="section">
+        <h2>Permutasi</h2>
+        <input type="number" id="permutasi-n" placeholder="Enter n">
+        <input type="number" id="permutasi-r" placeholder="Enter r">
+        <button onclick="permutasi()">Calculate</button>
+        <p id="permutasi-result"></p>
+    </div>
+
+    <div id="kombinasi" class="section">
+        <h2>Kombinasi</h2>
+        <input type="number" id="kombinasi-n" placeholder="Enter n">
+        <input type="number" id="kombinasi-r" placeholder="Enter r">
+        <button onclick="kombinasi()">Calculate</button>
+        <p id="kombinasi-result"></p>
+    </div>
+
+    <div id="binomial" class="section">
+        <h2>Koefisien Binomial</h2>
+        <input type="number" id="binomial-n" placeholder="Enter n">
+        <input type="number" id="binomial-k" placeholder="Enter k">
+        <button onclick="binomial()">Calculate</button>
+        <p id="binomial-result"></p>
+    </div>
+</body>
+<footer>
+</html>

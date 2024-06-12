@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: rgb(250, 252, 231);
+    color: rgb(31, 31, 31);
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.nav-title {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    padding: 14px 16px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(55, 55, 55);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #a6ff80;
+}
+
+.section {
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+input, select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+p {
+    margin-top: 10px;
+}
