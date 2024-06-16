@@ -18,13 +18,17 @@
                 <li><a href="#permutasi">Permutasi</a></li>
                 <li><a href="#kombinasi">Kombinasi</a></li>
                 <li><a href="#binomial">Binomial</a></li>
+                <li><a href="#sorting">Sorting</a></li>
             </ul>
         </div>
     </nav>
     <div id="counting" class="section">
         <h2>Counting</h2>
         <div id="counting-inputs">
-            <input type="number" placeholder="Enter a number">
+            <div>
+                <input type="number" placeholder="Enter a number">
+                <button onclick="deleteInput(this)">Delete</button>
+            </div>
         </div>
         <button onclick="addInput()">Add Another Number</button>
         <select id="counting-operation">
@@ -67,6 +71,25 @@
         <input type="number" id="binomial-k" placeholder="Enter k">
         <button onclick="binomial()">Calculate</button>
         <p id="binomial-result"></p>
+    </div>
+
+    <div id="sorting" class="section">
+        <h2>Sorting Algorithms</h2>
+        <div id="sorting-inputs">
+            <div>
+                <input type="number" placeholder="Enter a number">
+                <button onclick="deleteInput(this)">Delete</button>
+            </div>
+        </div>
+        <button onclick="addSortingInput()">Add Another Number</button>
+        <select id="sorting-algorithm">
+            <option value="bubbleSort">Bubble Sort</option>
+            <option value="insertionSort">Insertion Sort</option>
+            <option value="mergeSort">Merge Sort</option>
+            <option value="quickSort">Quick Sort</option>
+        </select>
+        <button onclick="sort()">Sort</button>
+        <p id="sorting-result"></p>
     </div>
 </body>
 <footer>
