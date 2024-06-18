@@ -18,11 +18,12 @@
                 <li><a href="#permutasi">Permutasi</a></li>
                 <li><a href="#kombinasi">Kombinasi</a></li>
                 <li><a href="#binomial">Binomial</a></li>
+                <li><a href="#sorting">Sorting</a></li>
             </ul>
         </div>
     </nav>
-    <div id="counting" class="section">
-        <h2>Menghitung</h2>
+    <div id="counting" class="section box">
+        <h2>Counting</h2>
         <div id="counting-inputs">
             <div>
                 <input type="number" placeholder="Masukkan angka">
@@ -40,7 +41,15 @@
         <div id="counting-result" class="result-box"></div>
     </div>
 
-    <div id="permutasi" class="section">
+    <div id="pigeonhole" class="section box">
+        <h2>Pigeonhole</h2>
+        <input type="number" id="pigeonhole-n" placeholder="Masukkan n">
+        <input type="number" id="pigeonhole-m" placeholder="Masukkan m">
+        <button onclick="pigeonhole()">Hitung</button>
+        <div id="pigeonhole-result" class="result-box"></div>
+    </div>
+
+    <div id="permutasi" class="section box">
         <h2>Permutasi</h2>
         <input type="number" id="permutasi-n" placeholder="Masukkan n">
         <input type="number" id="permutasi-r" placeholder="Masukkan r">
@@ -48,7 +57,7 @@
         <div id="permutasi-result" class="result-box"></div>
     </div>
 
-    <div id="kombinasi" class="section">
+    <div id="kombinasi" class="section box">
         <h2>Kombinasi</h2>
         <input type="number" id="kombinasi-n" placeholder="Masukkan n">
         <input type="number" id="kombinasi-r" placeholder="Masukkan r">
@@ -56,7 +65,7 @@
         <div id="kombinasi-result" class="result-box"></div>
     </div>
 
-    <div id="binomial" class="section">
+    <div id="binomial" class="section box">
         <h2>Koefisien Binomial</h2>
         <input type="number" id="binomial-n" placeholder="Masukkan n">
         <input type="number" id="binomial-k" placeholder="Masukkan k">
@@ -64,7 +73,7 @@
         <div id="binomial-result" class="result-box"></div>
     </div>
 
-    <div id="sorting" class="section">
+    <div id="sorting" class="section box">
         <h2>Algoritma Pengurutan</h2>
         <div id="sorting-inputs">
             <div>
@@ -78,7 +87,7 @@
             <option value="insertionSort">Insertion Sort</option>
             <option value="mergeSort">Merge Sort</option>
             <option value="quickSort">Quick Sort</option>
-            <option value="pigeonholeSort">Pigeonhole Sort</option> <!-- Tambahkan opsi ini -->
+            <option value="pigeonholeSort">Pigeonhole Sort</option>
         </select>
         <button onclick="urutkan()">Urutkan</button>
         <div id="sorting-steps" class="result-box"></div>
