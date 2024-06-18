@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,84 +13,86 @@
         <div class="nav-container">
             <div class="nav-title">Program Matematika Diskrit</div>
             <ul>
-                <li><a href="#counting">Counting</a></li>
+                <li><a href="#counting">Menghitung</a></li>
                 <li><a href="#pigeonhole">Pigeonhole</a></li>
                 <li><a href="#permutasi">Permutasi</a></li>
                 <li><a href="#kombinasi">Kombinasi</a></li>
                 <li><a href="#binomial">Binomial</a></li>
-                <li><a href="#sorting">Sorting</a></li>
             </ul>
         </div>
     </nav>
     <div id="counting" class="section">
-        <h2>Counting</h2>
+        <h2>Menghitung</h2>
         <div id="counting-inputs">
             <div>
-                <input type="number" placeholder="Enter a number">
-                <button onclick="deleteInput(this)">Delete</button>
+                <input type="number" placeholder="Masukkan angka">
+                <button onclick="hapusInput(this)">Hapus</button>
             </div>
         </div>
-        <button onclick="addInput()">Add Another Number</button>
+        <button onclick="tambahInput()">Tambah Angka Lain</button>
         <select id="counting-operation">
-            <option value="multiply">Multiply</option>
-            <option value="add">Add</option>
-            <option value="subtract">Subtract</option>
-            <option value="divide">Divide</option>
+            <option value="multiply">Perkalian</option>
+            <option value="add">Penjumlahan</option>
+            <option value="subtract">Pengurangan</option>
+            <option value="divide">Pembagian</option>
         </select>
-        <button onclick="count()">Calculate</button>
-        <p id="counting-result"></p>
+        <button onclick="hitung()">Hitung</button>
+        <div id="counting-result" class="result-box"></div>
     </div>
 
     <div id="pigeonhole" class="section">
         <h2>Pigeonhole</h2>
-        <input type="number" id="pigeonhole-n" placeholder="Enter n">
-        <input type="number" id="pigeonhole-m" placeholder="Enter m">
-        <button onclick="pigeonhole()">Calculate</button>
-        <p id="pigeonhole-result"></p>
+        <input type="number" id="pigeonhole-n" placeholder="Masukkan n">
+        <input type="number" id="pigeonhole-m" placeholder="Masukkan m">
+        <button onclick="pigeonhole()">Hitung</button>
+        <div id="pigeonhole-result" class="result-box"></div>
     </div>
 
     <div id="permutasi" class="section">
         <h2>Permutasi</h2>
-        <input type="number" id="permutasi-n" placeholder="Enter n">
-        <input type="number" id="permutasi-r" placeholder="Enter r">
-        <button onclick="permutasi()">Calculate</button>
-        <p id="permutasi-result"></p>
+        <input type="number" id="permutasi-n" placeholder="Masukkan n">
+        <input type="number" id="permutasi-r" placeholder="Masukkan r">
+        <button onclick="permutasi()">Hitung</button>
+        <div id="permutasi-result" class="result-box"></div>
     </div>
 
     <div id="kombinasi" class="section">
         <h2>Kombinasi</h2>
-        <input type="number" id="kombinasi-n" placeholder="Enter n">
-        <input type="number" id="kombinasi-r" placeholder="Enter r">
-        <button onclick="kombinasi()">Calculate</button>
-        <p id="kombinasi-result"></p>
+        <input type="number" id="kombinasi-n" placeholder="Masukkan n">
+        <input type="number" id="kombinasi-r" placeholder="Masukkan r">
+        <button onclick="kombinasi()">Hitung</button>
+        <div id="kombinasi-result" class="result-box"></div>
     </div>
 
     <div id="binomial" class="section">
         <h2>Koefisien Binomial</h2>
-        <input type="number" id="binomial-n" placeholder="Enter n">
-        <input type="number" id="binomial-k" placeholder="Enter k">
-        <button onclick="binomial()">Calculate</button>
-        <p id="binomial-result"></p>
+        <input type="number" id="binomial-n" placeholder="Masukkan n">
+        <input type="number" id="binomial-k" placeholder="Masukkan k">
+        <button onclick="binomial()">Hitung</button>
+        <div id="binomial-result" class="result-box"></div>
     </div>
 
     <div id="sorting" class="section">
-        <h2>Sorting Algorithms</h2>
+        <h2>Algoritma Pengurutan</h2>
         <div id="sorting-inputs">
             <div>
-                <input type="number" placeholder="Enter a number">
-                <button onclick="deleteInput(this)">Delete</button>
+                <input type="number" placeholder="Masukkan angka">
+                <button onclick="hapusInput(this)">Hapus</button>
             </div>
         </div>
-        <button onclick="addSortingInput()">Add Another Number</button>
+        <button onclick="tambahInputSorting()">Tambah Angka Lain</button>
         <select id="sorting-algorithm">
             <option value="bubbleSort">Bubble Sort</option>
             <option value="insertionSort">Insertion Sort</option>
             <option value="mergeSort">Merge Sort</option>
             <option value="quickSort">Quick Sort</option>
+            <option value="pigeonholeSort">Pigeonhole Sort</option> <!-- Tambahkan opsi ini -->
         </select>
-        <button onclick="sort()">Sort</button>
-        <p id="sorting-result"></p>
+        <button onclick="urutkan()">Urutkan</button>
+        <div id="sorting-steps" class="result-box"></div>
+        <div id="sorting-result" class="result-box"></div>
     </div>
 </body>
 <footer>
+</footer>
 </html>
