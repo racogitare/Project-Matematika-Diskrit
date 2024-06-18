@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-    background-color: rgb(250, 252, 231);
+    background-color: rgb(255, 255, 255);
     color: rgb(31, 31, 31);
 }
 
@@ -78,4 +78,12 @@ p, .result-box {
     border-radius: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
 }
