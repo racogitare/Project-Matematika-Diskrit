@@ -80,23 +80,6 @@ function hitung() {
     document.getElementById("counting-result").innerText = `Hasil: ${result}`;
 }
 
-function pigeonhole() {
-    const n = parseInt(document.getElementById('pigeonhole-n').value);
-    const m = parseInt(document.getElementById('pigeonhole-m').value);
-    let result;
-
-    if (isNaN(n) || isNaN(m)) {
-        result = "Silakan masukkan nilai n dan m.";
-    } else if (n < 0 || m <= 0) {
-        result = "Nilai n harus >= 0 dan m harus > 0.";
-    } else {
-        const k = Math.ceil(n / m);
-        result = `Paling sedikit ada ${k} elemen dalam satu lubang.`;
-    }
-
-    document.getElementById('pigeonhole-result').innerText = result;
-}
-
 function factorial(n) {
     if (n === 0) return 1;
     return n * factorial(n - 1);
