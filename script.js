@@ -133,6 +133,20 @@ function binomial() {
     document.getElementById('binomial-result').innerText = `Hasil: ${result}`;
 }
 
+function pigeonhole() {
+        const n = parseFloat(document.getElementById("pigeonhole-n").value);
+        const m = parseFloat(document.getElementById("pigeonhole-m").value);
+        let result;
+    
+        if (isNaN(n) || isNaN(m) || m <= 0) {
+            result = "Masukkan angka yang valid untuk n dan angka positif untuk m.";
+        } else {
+            result = Math.ceil(n / m);
+        }
+    
+        document.getElementById("pigeonhole-result").innerText = `Hasil Pigeonhole: ${result}`;
+    }
+
 function urutkan() {
     const values = getInputValues('sorting-inputs');
     const algorithm = document.getElementById('sorting-algorithm').value;
